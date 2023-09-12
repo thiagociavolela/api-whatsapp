@@ -12,7 +12,7 @@ $number = "551100000000";
 $message = "mensagem";
 
 $process = curl_init($url);
-$data = http_build_query(['grant_type' => 'Envio WhatsApp', 'number' => $number, 'caption' => $caption, 'file' => $file,]);
+$data = http_build_query(['grant_type' => 'Envio WhatsApp', 'number' => $number, 'message' => $message,]);
 
 $process = curl_init($url);
 curl_setopt($process, CURLOPT_HTTPHEADER, ["Content-Type: application/x-www-form-urlencoded"]);
